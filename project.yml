@@ -1,0 +1,46 @@
+#@todo Configure the path of scss, js, images
+styles:
+  path:
+    src:
+      sass: src/frontend/styles/
+      css: src/frontend/styles/  #@todo CSS path is wrong, fix it
+    dest: website/css/
+    vendors:
+      - "node_modules/"
+image:
+  path:
+    src: src/frontend/images/**/*
+    dest: website/images/
+  sprity:
+    src: src/frontend/images/**/*.{png,jpg,gif}
+    style: src/frontend/styles/sprity.scss
+    format: png
+    orientation: binary-tree
+    processor: sass
+    engine: gm
+    name: sprity
+    prefix: sprity
+    dest: src/frontend/images/sprity-scss
+  svgsprityconfig:
+    shape:
+      id:
+        separator: '-'
+    mode:
+      css:
+        dest: .
+        sprite: website/images/svg-sprite.svg
+        prefix: .
+        render:
+          scss:
+            dest: src/frontend/images/sprity-scss/svg-sprity.scss
+scripts:
+  lint:
+      configFile: .eslintrc
+  path:
+    applicationEntries: application.js
+    applicationSrc: src/frontend/scripts/
+    dest: website/js/
+    libs:
+      - "node_modules/jquery/dist/jquery.min.js"
+      - "node_modules/popper.js/dist/umd/popper.js"
+      - "node_modules/bootstrap/dist/js/bootstrap.min.js"

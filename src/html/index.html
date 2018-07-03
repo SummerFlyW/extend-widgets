@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../website/css/app.min.css">
+    </head>
+    <body>
+    <script type="application/json" name="creation-form-configs">
+        {
+            "schema":{
+                "title": "Sample form",
+                "description": "A simple form example.",
+                "type": "object",
+                "properties": {
+                    "password": {
+                        "type": "string",
+                        "title": "Password",
+                        "minLength": 3
+                    }
+                }
+            },
+            "uiSchema":{
+                "password": {
+                    "ui:widget": "extendedPassword",
+                    "ui:options": {
+                        "confirm":false,
+                        "visual":true
+                    }
+                }
+            },
+            "formData":{
+
+            }
+        }
+    </script>
+    <div id="creation-form"></div>
+    <script src="../../website/js/app.min.js" async></script>
+    </body>
+</html>

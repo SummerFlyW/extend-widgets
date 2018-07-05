@@ -7,17 +7,20 @@
   "dependencies": {
     "alasql": "^0.4.5",
     "bootstrap": "^4.0.0",
+    "ckeditor": "^4.10.0",
     "jquery": "^3.3.1",
     "node-dev-tools": "git+https://github.com/3vjuyuan/node-dev-tools.git",
     "polyfill-nodelist-foreach": "^1.0.1",
     "popper.js": "^1.14.1",
     "react": "^16.2.0",
+    "react-bootstrap-typeahead": "^3.1.5",
     "react-dom": "^16.2.0",
     "react-jsonschema-form": "^1.0.3",
     "react-paginate": "^5.2.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-slick": "^0.16.0",
+    "simplemde": "^1.11.2",
     "stickybits": "^3.2.0"
   },
   "scripts": {

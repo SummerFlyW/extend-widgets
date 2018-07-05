@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../../website/css/app.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/react-bootstrap-typeahead/css/Typeahead.css">
     </head>
     <body>
     <script type="application/json" name="creation-form-configs">
@@ -16,6 +17,38 @@
                         "type": "string",
                         "title": "Password",
                         "minLength": 3
+                    },
+                    "country":{
+                        "type": "string",
+                        "title": "country",
+                        "enum": [
+                            "中国",
+                            "日本",
+                            "美国",
+                            "英国",
+                            "巴西",
+                            "德国",
+                            "英格兰",
+                            "印度",
+                            "埃及",
+                            "葡萄牙",
+                            "西班牙",
+                            "朝鲜"
+                        ],
+                        "enumNames":[
+                            "中国",
+                            "日本",
+                            "美国",
+                            "英国",
+                            "巴西",
+                            "德国",
+                            "英格兰",
+                            "印度",
+                            "埃及",
+                            "葡萄牙",
+                            "西班牙",
+                            "朝鲜"
+                        ]
                     }
                 }
             },
@@ -25,6 +58,14 @@
                     "ui:options": {
                         "confirm":false,
                         "visual":true
+                    }
+                },
+                "country":{
+                    "ui:widget": "Typeahead",
+                    "ui:placeholder": "Choose a country...",
+                    "ui:options": {
+                        "labelKey": "value",
+                        "limitSearch":10
                     }
                 }
             },

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from 'react-jsonschema-form';
 import ExtendedPasswordWidget from './widgets/extendedPasswordWidget';
+import TypeaheadWidiget from './widgets/TypeaheadWidiget';
 
 module.exports = class ReactFormBuilder {
     constructor(formConfig, formContainer = 'default-form-container', submissionHandler = null) {
@@ -12,7 +13,8 @@ module.exports = class ReactFormBuilder {
         this.formConfig = formConfig;
         this.formContainer = formContainer;
         this.customWidgets = {
-            extendedPassword: ExtendedPasswordWidget
+            extendedPassword: ExtendedPasswordWidget,
+            Typeahead: TypeaheadWidiget
         };
     }
 
@@ -29,6 +31,7 @@ module.exports = class ReactFormBuilder {
                     uiSchema={this.formConfig.uiSchema}
                     formData={this.formConfig.formData}
                     widgets={this.customWidgets}
+                    onSubmit={this.submissionHandler.bind(this)}
                     ref={(form) => {
                         this.form = form;
                     }}

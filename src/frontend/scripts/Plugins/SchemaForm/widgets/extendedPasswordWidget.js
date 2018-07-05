@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 module.exports = class extendedPasswordWidget extends React.Component {
-    static propTypes = {
+    static propTypes = {// eslint-disable-line no-undef
         id: PropTypes.string.isRequired,
         registry: PropTypes.object,
         options: PropTypes.object,

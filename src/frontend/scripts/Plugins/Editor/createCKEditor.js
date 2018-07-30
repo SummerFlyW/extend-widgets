@@ -27,7 +27,6 @@ const createCKEditor = (props, updateCallback) => {
         onChange,
         options
     } = props;
-    console.log(props);
     const CKEditor = CKEDITOR.replace(id, {// eslint-disable-line no-undef
         toolbar: options.toolbar
     });

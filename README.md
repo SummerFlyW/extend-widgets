@@ -54,3 +54,6 @@ react-jsonschema-form中的select不支持搜索功能，搜索功能使用Typea
 }
 
 ui options中的toolbar是自定义配置编辑器的toolbar，具体配置可参考ckeditor4工具栏.docx
+
+![Image text](https://github.com/SummerFlyW/extend-widgets/blob/master/src/frontend/images/form.png)   
+

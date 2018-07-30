@@ -1,0 +1,29 @@
+// Define the breakpoint for full-HD screens
+$screen-fullhd: 1400px;
+
+$general-image-path: './../images';
+$general-font-path: './../fonts';
+
+// Color definitions
+$black: #000;
+$white: #fff;
+
+// Space definitions
+$space-xs: .5rem;
+$space-small: 1rem;
+$space-medium: 1.5rem;
+$space-normal: 2rem;
+
+//Font definitions
+$font-size-small: .875rem;
+$font-size-normal: 1rem;
+$font-size-big: 1.25rem;
+$font-size-very-big: 2rem;
+$font-size-large: 2.5rem;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+
+// z-index
+$z-index-main-navigation: 100;

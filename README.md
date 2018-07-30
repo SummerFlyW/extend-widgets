@@ -32,4 +32,25 @@ react-jsonschema-form中的select不支持搜索功能，搜索功能使用Typea
     "labelKey": "value",
     "limitSearch":10  //数据大于10条时有搜索功能，少于十条没有搜索功能
  }
+ 
+ ckeditor扩展：
+ 
+"ui:widget": "extendedEditor",
+"ui:options": {
+"editor": {
+"name": "CKEditor"
+},
+"toolbar": [
+{
+"name": "document",
+"items": [
+"Source",
+ "-",
+"Save",
+"Preview"
+]
+}
+]
+}
 
+ui options中的toolbar是自定义配置编辑器的toolbar

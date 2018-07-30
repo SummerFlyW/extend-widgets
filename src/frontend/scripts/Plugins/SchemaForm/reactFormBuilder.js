@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from 'react-jsonschema-form';
 import ExtendedPasswordWidget from './widgets/extendedPasswordWidget';
+import RichTextEditorWidget from './widgets/richTextEditorWidget';
 import TypeaheadWidiget from './widgets/TypeaheadWidiget';
 
 module.exports = class ReactFormBuilder {
@@ -14,7 +15,8 @@ module.exports = class ReactFormBuilder {
         this.formContainer = formContainer;
         this.customWidgets = {
             extendedPassword: ExtendedPasswordWidget,
-            Typeahead: TypeaheadWidiget
+            Typeahead: TypeaheadWidiget,
+            extendedEditor: RichTextEditorWidget
         };
     }
 

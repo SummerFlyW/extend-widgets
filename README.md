@@ -5,6 +5,7 @@ react-jsonschema-form-extensions
 npm run styles 编译scss文件
 npm run scripts 编译js文件
 npm run image 编译图片
+手动解压src文件夹下的ckeditor.zip文件。
 
 react-jsonschema-form : https://github.com/mozilla-services/react-jsonschema-form
 
